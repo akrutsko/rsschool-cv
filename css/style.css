@@ -62,8 +62,7 @@ main {
   flex-wrap: wrap;
 }
 
-.left-column a,
-.right-column a {
+main a:any-link {
   color: #000000;
 }
 
@@ -95,21 +94,18 @@ main a:hover {
 
 .info {
   text-align: center;
+  margin-bottom: 18px;
 }
 
 .info img {
-  width: 66%;
+  width: 215px;
+  height: 155px;
   border-radius: 50%;
 }
 
 .info h1 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
   letter-spacing: 2px;
-}
-
-.info p {
-  margin-bottom: 18px;
 }
 
 .right-column {
@@ -129,7 +125,7 @@ main a:hover {
   letter-spacing: 1.7px;
 }
 
-.right-column h2~p {
+.right-column p {
   padding: 10px 10px 0;
 }
 
@@ -153,6 +149,7 @@ main a:hover {
 .linkout::after {
   position: absolute;
   top: 2px;
+  left: 100%;
   width: 8px;
   height: 8px;
   content: "";
@@ -160,17 +157,7 @@ main a:hover {
   background-image: url("../assets/svg/linkout.svg");
 }
 
-.project-list li:first-child a:after {
-  left: 79px;
-}
-
-.project-list li:last-child a:after {
-  left: 124px;
-}
-
 footer {
-  position: sticky;
-  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -182,7 +169,7 @@ footer {
 
 footer a {
   padding: 0 25px;
-  transition: 1s;
+  transition: color 1s;
 }
 
 footer img {
